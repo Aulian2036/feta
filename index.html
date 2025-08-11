@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <title>Login with Spotify</title>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Feta Lyrics</title>
+
 </head>
 <body>
-  <h1>Login Spotify Demo</h1>
-  <button id="spotify-login">Login with Spotify</button>
-
-  <script src="spotify-login.js"></script>
+  <div class="topBar">
+    <div class="bar"><h1><a style="color: white;" href="#">Feta Lyrics</a></h1></div>
+    <div class="title"><h2>Beranda</h2></div>
+  </div>  
+  
+  <div class="songList">
+    <div class="song" onclick="navigateToPage('voltTackle.html')">
+      <div class="songArt"></div>
+      <div class="songDetail">
+        <div class="info1">Song Title</div>
+        <div class="info2">Artist Name</div>
+      </div>
+    </div>
+    <div class="song" onclick="navigateToPage('rendezvous.html')">
+      <div class="songArt"></div>
+      <div class="songDetail">
+        <div class="info1">a</div>
+        <div class="info2">b</div>
+      </div>
+    </div>
+    <div class="song" onclick="navigateToPage('flos.html')">
+      <div class="songArt"></div>
+      <div class="songDetail">
+        <div class="info1">a</div>
+        <div class="info2">b</div>
+      </div>
+    </div>
+    <div class="song" onclick="navigateToPage('#')">
+      <div class="songArt"></div>
+      <div class="songDetail">
+        <div class="info1">a</div>
+        <div class="info2">b</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function navigateToPage(pageUrl) {
+       window.location.href = pageUrl;
+    }
+</script>
+  <script src="script.js"></script>
 </body>
 </html>
-
